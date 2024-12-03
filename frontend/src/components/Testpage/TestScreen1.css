@@ -1,0 +1,148 @@
+/* Test Screen Container */
+.test-screen {
+  background-color: #6CACBF;
+  width: 280px;
+  border-radius: 25px;
+ 
+  padding: 10px;
+  margin: 20px auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between content and exit button */
+  align-items: center;
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+
+
+.test-screen .header span {
+  font-size: 20px; /* Font size for header */
+  color: #000; /* Font color */
+}
+
+/* Content */
+.test-screen .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 15px;
+ 
+}
+
+.test-screen .content h2 {
+  margin: 0; /* Remove margin above h2 */
+  margin-top: 30px;
+  color: #000; /* Font color */
+}
+
+.test-screen .content h4 {
+  margin: 0; /* Remove margin above h4 */
+  font-size: 15px; /* Font size for instruction */
+  color: #000; /* Font color */
+  font-weight: normal; /* Font weight */
+}
+
+/* Audio Buttons */
+.test-screen .audio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px; /* Space from content */
+}
+
+.test-screen .audio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #417bb2; /* Default button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.test-screen .audio-button.correct {
+  background-color: green; /* Correct answer color */
+}
+
+.test-screen .audio-button.wrong {
+  background-color: red; /* Wrong answer color */
+}
+
+.test-screen .audio-icon {
+  margin-right: 5px;
+}
+
+/* Exit Button */
+.test-screen .exit-button {
+  background-color: #2F4046;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.test-screen .exit-button:hover {
+  background-color: #1c262a; /* Darker color on hover */
+}
+
+/* Repeat Button */
+.repeat-button {
+  background-color:   #2F4046; /* Green background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* General Button Styling */
+.test-screen button {
+  font-size: 14px; /* Consistent font size */
+  font-family: Arial, sans-serif; /* Font family */
+  outline: none; /* Remove default outline */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .test-screen {
+    width: 100%; /* Fit smaller screens */
+    max-width: 320px; /* Limit maximum width */
+    margin: 20px auto; /* Center horizontally */
+  }
+}
+.audio-button {
+  background-color: #417bb2; /* Default button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.audio-button.correct {
+  background-color: green; /* Color for variable audio */
+}
+
+.audio-button.wrong {
+  background-color: red; /* Color for standard audio */
+}

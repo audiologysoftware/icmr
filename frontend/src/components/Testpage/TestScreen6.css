@@ -1,0 +1,116 @@
+/* Test Screen Container */
+.test-screen6 {
+    background-color: #6CACBF;
+    width: 280px;
+    border-radius: 25px;
+  
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.test-screen6 .header span {
+    font-size: 20px;
+    color: #000;
+}
+
+/* Content */
+.test-screen6 .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin-bottom: 15px;
+   
+}
+
+.test-screen6 .content h2 {
+    margin: 0;
+    margin-top: 20px; /* Adjusted margin for spacing */
+    color: #000;
+}
+
+.test-screen6 .content h4 {
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: normal;
+}
+
+/* Audio Symbol */
+.test-screen6 .audio-icon {
+    font-size: 24px; /* Larger icon size */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Script Display */
+.test-screen6 .display-script {
+    font-size: 18px;
+    color: #000;
+    margin: 10px 0; /* Space around the script text */
+}
+
+/* Button Container */
+.test-screen6 .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Full width of the container */
+}
+
+/* Buttons */
+.test-screen6 .button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Font size for buttons */
+    font-family: Arial, sans-serif; /* Font family for buttons */
+}
+
+.test-screen6 .button.correct {
+    background-color: green;
+}
+
+.test-screen6 .button.incorrect {
+    background-color: red;
+}
+
+.test-screen6 .button.repeat {
+    background-color: #417bb2;
+}
+
+.test-screen6 .button.exit {
+    background-color: #2F4046;
+}
+
+.test-screen6 .button:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+.test-screen .button-row {
+    background-color: #1c262a; /* Darker color on hover */
+  }
+  .test-screen6 .button.exit {
+    background-color: #2F4046; /* Color for exit button */
+}
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .test-screen6 {
+        width: 100%;
+        max-width: 320px;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,143 @@
+/* Test Screen Container */
+.test-screen14 {
+  background-color: #6CACBF;
+  width: 280px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.test-screen14 h4 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Question Container */
+.test-screen14 .question-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.test-screen14 .question-container h2 {
+  margin: 0;
+  color: #000;
+}
+
+.test-screen14 .question-container p {
+  color: #000;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Options Container */
+.test-screen14 .options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.test-screen14 .option-display {
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Button Container */
+.test-screen14 .buttons-rows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.test-screen14 .buttons {
+  flex: 1; /* Makes buttons equal width in a row */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}/* Correct Button (Green) */
+.test-screen14 .correct-btn {
+  background-color: #238323; /* Green for correct button */
+}
+
+/* Incorrect Button (Red) */
+.test-screen14 .incorrect-btn {
+  background-color: rgb(138, 38, 38); /* Red for incorrect button */
+}
+
+/* Exit Button (Default) */
+.test-screen14 .exit-btn {
+  background-color: #2F4046;
+}
+
+/* Highlighting correct and incorrect buttons */
+.test-screen14 .correct-btn-highlight {
+  background-color: #238323; /* Highlight with green */
+}
+
+.test-screen14 .incorrect-btn-highlight {
+  background-color: rgb(138, 38, 38); /* Highlight with red */
+}
+
+/* Hover effects (optional) */
+.test-screen14 .button:hover {
+  opacity: 0.8;
+}
+
+/* Popup */
+.test-screen14 .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .test-screen14 {
+    width: 100%;
+    margin-top: 50px;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+
+  /* Ensures the buttons are in a single row */
+  .test-screen14 .buttons-rows {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-evenly; /* Distribute buttons evenly across the row */
+  }
+
+  .test-screen14 .buttons {
+    flex: none; /* Reset the flex property so that each button only takes as much space as needed */
+    width: 30%; /* Adjust button width to fit 3 buttons in a row */
+  }
+}

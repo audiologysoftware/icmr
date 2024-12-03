@@ -1,0 +1,88 @@
+/* Instruction.css */
+.instruction-container {
+    background-color: #6CACBF;
+    width: 300px; 
+    border-radius: 25px;
+    height: 400px;
+    padding: 10px 20px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction-container h1 {
+    font-size: 22px; /* Slightly reduced font size for better readability on smaller screens */
+    margin-bottom: 15px; /* Reduced margin for a more compact layout */
+    color: #fff;
+}
+
+.instruction-container p {
+    font-size: 18px; /* Reduced font size for better readability on smaller screens */
+    margin-bottom: 15px; /* Reduced margin for a more compact layout */
+    color: #000;
+}
+
+.instruction-container .button-container {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    margin-top: auto;
+}
+
+.instruction-container button {
+    margin: 0 auto;
+    display: block;
+    width: 75px;
+    padding: 10px 15px;
+    font-size: 10px;
+    line-height: normal;
+    background-color: #2F4046;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .instruction-container {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 300px; /* Allow height to adjust to content */
+        padding: 15px; /* Add more padding for a comfortable layout */
+        margin: 20px auto; /* Reduce top margin for smaller screens */
+    }
+
+    .instruction-container h1 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .instruction-container p {
+        font-size: 16px; /* Reduce paragraph font size for better fit */
+    }
+
+    .instruction-container button {
+        width: 90px; /* Slightly increase button width for better touch targets */
+        font-size: 12px; /* Increase button font size for readability */
+    }
+}
+
+@media (max-width: 360px) {
+    .instruction-container {
+        padding: 10px; /* Adjust padding for very small screens */
+        margin: 15px auto; /* Further reduce top margin */
+    }
+
+    .instruction-container h1 {
+        font-size: 18px; /* Further reduce heading size */
+    }
+
+    .instruction-container p {
+        font-size: 14px; /* Adjust paragraph font size for very small screens */
+    }
+
+    .instruction-container button {
+        width: 85px; /* Adjust button width slightly */
+        font-size: 11px; /* Maintain readability for buttons */
+    }
+}

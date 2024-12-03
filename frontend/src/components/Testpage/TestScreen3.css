@@ -1,0 +1,144 @@
+/* Test Screen Container */
+.test-screen3 {
+  background-color: #6CACBF;
+  width: 280px;
+  border-radius: 25px;
+ 
+  padding: 10px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;  
+}
+
+
+
+.test-screen3 .header span {
+  font-size: 20px;
+  color: #000;
+}
+
+/* Content */
+.test-screen3 .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.test-screen3 .content h2 {
+  margin: 0;
+  margin-top: 20px;
+  color: #000;
+}
+
+.test-screen3 .content h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #000;
+  font-weight: normal;
+}
+
+/* Audio Symbol */
+.test-screen3 .audio-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Script Display */
+.test-screen3 .display-script {
+  font-size: 17px;
+  color: #000;
+  margin: 10px 0;
+  white-space: nowrap;        /* Prevents wrapping to the next line */
+  overflow-x: auto;           /* Adds horizontal scroll if text is too long */
+  width: 100%;                /* Full width of the container */
+}
+
+/* Button Container */
+.test-screen3 .button-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Correct and Incorrect Buttons Row */
+.test-screen3 .button-row.correct-incorrect {
+  flex-wrap: wrap;
+  /* Allows buttons to wrap on smaller screens */
+  justify-content: space-between;
+}
+
+/* Repeat and Exit Buttons Row */
+.test-screen3 .button-row.repeat-exit {
+  flex-wrap: wrap;
+  /* Allows buttons to wrap on smaller screens */
+  justify-content: space-between;
+}
+
+/* Line for Correct and Incorrect buttons */
+.test-screen3 .button-line {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Line for Repeat and Exit buttons */
+.test-screen3 .control-line {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+/* Buttons */
+.test-screen3 .button {
+  flex: 1; /* Makes buttons equal width in a row */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+/* Button Colors */
+.test-screen3 .correct-button {
+  background-color: #238323;
+}
+
+.test-screen3 .incorrect-button {
+  background-color: rgb(138, 38, 38);
+}
+
+.test-screen3 .repeat-button,
+.test-screen3 .exit-button {
+  background-color: #2F4046;
+}
+
+.test-screen3 .button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  body {
+    margin-top: 50px; /* Ensure there's space between navbar and screen */
+  }
+  .test-screen3 {
+    width: 100%;
+    margin-top: 50px; /* Increased space between navbar and screen in mobile view */
+    max-width: 320px;
+    margin: 20px auto;
+  }
+}

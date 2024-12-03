@@ -1,0 +1,120 @@
+/* Level 3 Container */
+.level3-container {
+    background-color: #6CACBF; /* Background color */
+    width: 280px; /* Fixed width for level container */
+    border-radius: 25px; /* Rounded corners */
+    height: 480px; /* Fixed height */
+    padding: 10px 20px; /* Padding inside the container */
+    margin: 30px auto 0; /* Centered margin */
+    position: relative; /* Position for child elements */
+    overflow: hidden; /* Ensures content stays within container */
+}
+
+/* Dropdown Container */
+.dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 115px;
+    margin-left: auto;
+    z-index: 1; /* Ensures dropdown stays on top */
+    overflow: hidden; /* Contain the dropdown items */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Align dropdown menu directly below */
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px; /* Set a max-height for scrolling */
+    overflow-y: auto; /* Allows scrolling within dropdown if needed */
+    z-index: 2; /* Ensures dropdown menu appears above other elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dropdown and Input Styles */
+.level3-container input, 
+.level3-container select {
+    padding: 8px;
+    font-size: 13px;
+    width: 100%; /* Full width for responsive design */
+    max-width: 200px; /* Limit width to prevent overflow */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between inputs */
+    box-sizing: border-box;
+}
+
+/* Dropdown Container */
+.level3-container .dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Arrow */
+.level3-container .dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;  /* Ensure buttons are centered */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto; /* Push to bottom */
+    gap: 20px; /* Space between the buttons */
+}
+
+/* Small Container */
+.level3-small-container {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Element Container */
+.level3-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .level3-container {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    .level3-container input,
+    .level3-container select {
+        width: 100%;
+        max-width: none; /* Remove max-width for flexibility */
+    }
+
+    .level3-small-container {
+        width: 100%;
+    }
+
+    .level3-button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+        gap: 10px; /* Space between buttons */
+    }
+}

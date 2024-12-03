@@ -1,0 +1,114 @@
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup is on top */
+}
+
+/* Popup Container */
+.popup-container {
+  background-color: #ffffff; /* White background */
+  padding: 20px 30px;
+  border-radius: 12px; /* Smooth rounded corners */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative;
+}
+
+/* Popup Title */
+.popup-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Score Text Styling */
+.popup-score {
+  font-size: 48px; /* Main score font size */
+  font-weight: bold;
+  color: #28a745; /* Green color for the score */
+  margin-bottom: 10px;
+}
+
+/* Memory and Sequencing Score Styling */
+.memory-score,
+.distraction-score,
+.target-score,
+.non-target-score,
+.sequencing-score {
+  font-size: 18px; /* Set font size to 8px */
+  font-weight: bold; /* Make text bold */
+  color: #28a745; /* Green color for memory and sequencing scores */
+  margin: 5px 0; /* Space between scores */
+}
+
+/* Correct Answer Styling */
+.correct-answers {
+  color: #28a745; /* Color for correct answers */
+}
+
+/* Popup Informative Text */
+.popup-text {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* Popup Close Button */
+.popup-close-button {
+  background-color: #007bff; /* Primary blue button */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-close-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.popup-close-button:focus {
+  outline: none; /* Remove default button outline */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .popup-container {
+    padding: 15px 20px;
+  }
+
+  .popup-title {
+    font-size: 20px;
+  }
+
+  .popup-score {
+    font-size: 36px; /* Adjust size for smaller screens */
+  }
+
+  .memory-score,
+  .distraction-score,
+  .sequencing-score {
+    font-size: 12px; /* Keep size consistent */
+  }
+
+  .popup-text {
+    font-size: 14px;
+  }
+
+  .popup-close-button {
+    font-size: 14px;
+  }
+}

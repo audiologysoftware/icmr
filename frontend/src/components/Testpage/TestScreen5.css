@@ -1,0 +1,305 @@
+/* Test Screen Container */
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 320px;
+  height: auto;
+  background-color: #6CACBF;
+  padding: 10px;
+  max-width: 430px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Style for the options button */
+.control-button {
+  background-color: #417bb2; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 50px; /* Slightly rounded buttons */
+  padding: 10px 20px; /* Padding for buttons */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the button */
+.control-button:hover {
+  background-color: #417bb2; /* Darker blue on hover */
+}
+
+/* Active state for the button */
+.control-button.active {
+  background-color: #2b527d; /* Even darker blue for active state */
+}
+
+/* Additional spacing and alignment */
+.options-section {
+  display: flex;
+  justify-content: center; /* Center the button */
+  align-items: center; /* Vertically align the button */
+  margin-top: 20px; /* Space above the section */
+}
+
+/* Adjust button styling for small screens */
+@media screen and (max-width: 600px) {
+  .control-button {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+/* Main Content */
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.instruction-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skill-title {
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Options List */
+.options-list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.option-item {
+  background-color: white;
+  border-radius: 20px;
+  
+  padding: 5px;
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%; /* Make items take full width of their container */
+  max-width: 300px; /* Consistent max width */
+  box-sizing: border-box;
+}
+
+.option-item:hover {
+  transform: scale(1.03);
+}
+
+.instruction-text {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+
+/* Audio Button Icon */
+.audio-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.audio-button-icon span {
+  display: inline-block;
+}
+
+.audio-button-icon:focus {
+  outline: none;
+}
+
+/* Script Display */
+.script-display {
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  max-height: 300px;
+}
+
+.script-display::-webkit-scrollbar {
+  display: none;
+}
+
+.script-display {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Control Section */
+.control-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Button Rows */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.button-row.correct-incorrect {
+  justify-content: space-between;
+}
+
+.button-row.repeat-exit {
+  justify-content: space-between;
+}
+
+/* Buttons */
+.control-button {
+  background-color: #417bb2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.control-button.correct {
+  background-color: #238323;
+}
+
+.control-button.incorrect {
+  background-color: rgb(138, 38, 38);
+}
+
+.control-button.repeat,
+.control-button.exit {
+  background-color: #2F4046;
+}
+
+.control-button:hover {
+  background-color: #2b527d;
+}
+
+.control-button:active {
+  transform: translateY(2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .test-container {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .content {
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .header-section {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .skill-title {
+    font-size: 1rem;
+  }
+
+  .instruction-text {
+    font-size: 1rem;
+  }
+
+  .control-button {
+    flex: 1 1 calc(50% - 10px); /* Two buttons per row */
+    max-width: 30%;
+  }
+
+  .options-list {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .option-item {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .script-display {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .test-container {
+    padding: 5px;
+  }
+
+  .header-section {
+    padding: 10px;
+  }
+
+  .control-button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .content {
+    gap: 1px;
+  }
+
+  .options-list {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .option-item {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .button-row {
+    gap: 5px;
+  }
+}

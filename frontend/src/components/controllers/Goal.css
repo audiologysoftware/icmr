@@ -1,0 +1,48 @@
+/* Header Section */
+.header-section {
+  background-color: #E3F2FD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Group Goal Text */
+.group-goal {
+  font-size: 12px;
+  color: #000;
+  margin: 0; /* No margin at the top */
+  padding: 0;
+ 
+}
+
+/* Group Skill Text */
+.group-skill {
+  font-size: 9px;
+  color: #000;
+  margin: 4px 0 0; /* Add a small space above skill text */
+  padding: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .header-section {
+    width: 95%; /* Adjust width for smaller screens */
+    padding: 10px;
+  }
+
+  .group-goal {
+    font-size: 10px; /* Reduce font size for smaller screens */
+  }
+
+  .group-skill {
+    font-size: 8px; /* Reduce font size for smaller screens */
+  }
+}

@@ -1,0 +1,125 @@
+/* Test Screen Container */
+.test-screen7 {
+    background-color: #6CACBF; /* Background color matching TestScreen6 */
+    width: 280px; /* Fixed width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px; /* Padding around the container */
+    margin: 20px auto; /* Center the container */
+    position: relative; /* Relative positioning */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Vertical stacking */
+    align-items: center; /* Center items horizontally */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+ 
+
+.test-screen7 .header span {
+    font-size: 20px; /* Font size for header */
+    color: #000; /* Black text color */
+}
+
+/* Content */
+.test-screen7 .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+/* Scripts Display */
+.test-screen7 .scripts-display {
+    margin: 10px 0; /* Space around script display */
+    font-size: 18px; /* Font size for script display */
+    color: #000; /* Black text color */
+}
+
+.test-screen7 .scripts-display ul {
+    list-style-type: none; /* No bullet points for the list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Input inside script display */
+.test-screen7 .scripts-display input {
+    width: 100%; /* Full width input */
+    padding: 5px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    margin-bottom: 5px; /* Space below input */
+}
+
+/* Response button styles */
+.response-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff; /* White text color */
+}
+
+/* Default button color */
+.response-btn.default {
+    background-color: #417bb2; /* Default button color */
+}
+
+/* Button color when selected (green for correct) */
+.response-btn.green {
+    background-color: green; /* Correct response color */
+}
+
+/* Control buttons styling */
+.control-buttons {
+    display: flex; /* Flexbox for button layout */
+    justify-content: space-between; /* Space buttons evenly */
+    gap: 10px; /* Gap between buttons */
+    margin-top: 20px; /* Space above buttons */
+    width: 100%; /* Full width of content */
+}
+
+/* Common styles for all control buttons */
+.control-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff; /* White text color */
+    font-size: 14px; /* Font size for buttons */
+    font-family: Arial, sans-serif; /* Font family for buttons */
+    flex: 1; /* Make buttons grow equally */
+}
+
+/* Specific styles for each control button */
+.edit-btn {
+    background-color: #417bb2;
+}
+
+.submit-btn {
+    background-color: #28a745;
+}
+
+.exit-btn {
+    background-color: #2F4046;
+}
+
+.control-btn:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .test-screen7 {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 320px; /* Max width limit */
+        margin: 20px auto; /* Center the container */
+    }
+}

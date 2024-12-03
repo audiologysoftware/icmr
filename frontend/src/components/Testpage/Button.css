@@ -1,0 +1,15 @@
+.container{
+    padding: 5px;
+}
+
+button{  
+    padding: 10px 24px;
+    border-radius: 24px;    
+    color:#FFFFFF;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    letter-spacing: 1px;
+    min-width: 120px;
+    cursor: pointer;
+}

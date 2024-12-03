@@ -1,0 +1,70 @@
+/* Test Screen 9 Container */
+.test-screen9 {
+    background-color: #6CACBF; /* Same background color */
+    width: 280px; /* Same width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 20px; /* Same padding */
+    margin: 20px auto; /* Centered with auto margin */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+/* Header Section */
+.test-screen9 h2 {
+    color: #000; /* Text color */
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 20px; /* Font size */
+    text-align: center; /* Center the text */
+}
+
+/* Button Row */
+.button-row {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+    align-items: center; /* Center align buttons vertically */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space from the heading */
+    width: 100%;
+}
+
+/* Buttons */
+.button-row button {
+ 
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 30px; /* Slightly rounded buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
+
+/* Correct Answer Button */
+.button-row button.correct {
+    background-color: #238323; /* Green for correct answers */
+}
+
+
+
+/* Incorrect Answer Button */
+.button-row button.incorrect {
+    background-color: #A81D1D; /* Red for incorrect answers */
+}
+
+.button-row button.incorrect:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Exit Button */
+.button-row button.exit {
+    background-color: #2F4046; /* Different color for exit button */
+}
+
+.button-row button.exit:hover {
+    background-color: #1c262a; /* Darker on hover */
+}

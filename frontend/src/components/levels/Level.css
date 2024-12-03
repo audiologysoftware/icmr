@@ -1,0 +1,179 @@
+/* Level Container */
+.level-container {
+    background-color: #6CACBF;
+    width: 280px; /* Ensure it takes full width */
+    border-radius: 25px;
+    height: 480px; /* Fixed height */
+    padding: 10px 20px; /* Padding inside the container */
+    margin: 30px auto 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+   
+}
+
+/* Content Container */
+.content-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Hide scrollbar for dropdown */
+.dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px; /* Increase the width of the dropdown container */
+    margin-left: auto;
+    z-index: 1;
+    overflow: visible; /* Ensure dropdown doesn't hide */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    z-index: 2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown and Input Styles */
+.level-container input,
+.level-container select {
+    padding: 8px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 100%; /* Make input and select elements take full width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    box-sizing: border-box;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;  /* Ensure buttons are centered */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto; /* Push to bottom */
+    gap: 20px; /* Space between the buttons */
+}
+
+/* Button Styles */
+.level-button-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 80px; /* Ensure buttons have enough width */
+}
+label{
+font-size: small;
+}
+
+/* Small Container */
+.level-small-container {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Element Container */
+.level-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .level-container {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 15px;
+        height: 380px; /* Reduce height for mobile view */
+    }
+
+    .level-container input,
+    .level-container select {
+        width: 100%;
+        max-width: none;
+    }
+
+    .level-small-container {
+        width: 100%;
+    }
+
+    /* Ensure Buttons are in a Row for Mobile */
+    .level-button-container {
+        flex-direction: row; /* Ensure buttons are in a single row */
+        justify-content: center; /* Center buttons */
+        gap: 20px; /* Space between buttons */
+    }
+
+    .level-button-container button {
+        min-width: 90px; /* Ensure buttons have enough width */
+        padding: 8px 12px;
+    }
+}
+
+/* For desktop and mobile, ensure buttons are in a row */
+.level-button-container {
+    flex-direction: row; /* Make sure the buttons are in a row in both mobile and desktop views */
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Enhanced Input Focus States */
+.level-container input:focus,
+.level-container select:focus {
+    outline: none;
+    border-color: #6CACBF;
+    box-shadow: 0 0 0 2px rgba(108, 172, 191, 0.2);
+}
+
+/* Smooth Transitions */
+.level-container input,
+.level-container select,
+.dropdown-menu {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Main content scrollbar styling */
+.content-container::-webkit-scrollbar {
+    width: 8px;
+    display: none; /* Hide the scrollbar */
+}
+
+.content-container::-webkit-scrollbar-thumb {
+    background-color: #6CACBF;
+    border-radius: 4px;
+}
+
+.content-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Button hover effects */
+.level-button-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.level-button-container button:active {
+    background-color: #e0e0e0;
+}

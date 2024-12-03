@@ -1,0 +1,166 @@
+/* Test Screen Container */
+.test-screen13 {
+  background-color: #6CACBF; /* Main background color */
+  width: 300px; /* Adjust width for the container */
+  border-radius: 25px; /* Rounded corners */
+  padding: 20px; /* Space inside the container */
+  margin: 20px auto; /* Center the container */
+  position: relative; /* Position for inner elements */
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Header Styling */
+.test-screen13 .header span {
+  font-size: 24px; /* Adjust header font size */
+  color: #fff; /* White font color */
+}
+
+/* Content Styling */
+.test-screen13 .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: #fff; /* White background for content */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Space inside content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for content */
+  width: 90%; /* Fit content inside the container */
+  margin-bottom: 15px; /* Space below content */
+}
+
+.test-screen13 .content h2 {
+  margin: 0; /* Remove default margins */
+  margin-top: 20px; /* Add space above */
+  color: #000; /* Black text color */
+  font-size: 22px; /* Font size for header */
+}
+
+.test-screen13 .content h4 {
+  margin: 0; /* Remove default margins */
+  font-size: 16px; /* Adjust font size for subheader */
+  color: #000; /* Black text color */
+  font-weight: normal; /* Normal font weight */
+}
+
+.test-screen13 .display-script {
+  margin-top: 20px; /* Space above the script */
+  color: #000; /* Black text color */
+  font-size: 18px; /* Font size for the script */
+}
+
+/* Buttons */
+.test-screen13 .button,
+.test-screen13 .exit-button {
+  width: 100px; /* Button width */
+  padding: 10px; /* Button padding */
+  margin: 5px; /* Space between buttons */
+  border-radius: 15px; /* Rounded corners */
+  color: #fff; /* White text */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Bold font */
+  border: none; /* Remove default borders */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.test-screen13 .button {
+  background-color: #2F4046; /* Green background for buttons */
+}
+
+.test-screen13 .exit-button {
+  background-color: #2F4046; /* Dark gray background for exit button */
+}
+
+.test-screen13 .question-button {
+  background-color: #417bb2; /* Blue background for question button */
+}
+
+/* Layout for Buttons */
+.test-screen13 .button-row {
+  display: flex; /* Flexbox layout for buttons */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  width: 100%; /* Full width for button row */
+}
+
+/* Popup Styles */
+.test-screen13 .popup {
+  position: fixed; /* Fixed position for popup */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 1000; /* Bring popup to the front */
+  text-align: center; /* Center content */
+}
+
+.test-screen13 .popup .popup-header {
+  margin-bottom: 10px; /* Space below the header */
+}
+
+.test-screen13 .popup .popup-body {
+  margin-bottom: 20px; /* Space below the body */
+}
+
+.test-screen13 .popup .popup-footer {
+  display: flex; /* Flexbox layout for footer */
+  justify-content: center; /* Center footer content */
+  gap: 10px; /* Space between buttons */
+}
+
+.test-screen13 .popup .popup-footer button {
+  background-color: #417bb2; /* Blue background for popup buttons */
+  color: #fff; /* White text */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .test-screen13 {
+    width: 100%; /* Full width for small screens */
+    max-width: 320px; /* Limit max width */
+    height: auto; /* Adjust height dynamically */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .test-screen13 .header span {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .test-screen13 .content h2 {
+    font-size: 18px; /* Smaller header font size */
+  }
+
+  .test-screen13 .content h4 {
+    font-size: 14px; /* Smaller subheader font size */
+  }
+
+  .test-screen13 .button-row {
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: space-between; /* Space evenly */
+  }
+
+  .test-screen13 .button,
+  .test-screen13 .exit-button {
+    width: calc(50% - 10px); /* Adjust button width */
+  }
+
+  .test-screen13 .popup {
+    width: 90%; /* Adjust popup width */
+    max-width: 300px; /* Limit max width */
+  }
+
+  .test-screen13 .popup .popup-footer button {
+    padding: 8px 16px; /* Adjust padding for smaller buttons */
+    font-size: 12px; /* Smaller font size */
+  }
+}

@@ -1,0 +1,168 @@
+/* Test Screen Container */
+.test-screen11 {
+    background-color: #6CACBF;
+    width: 280px;
+    border-radius: 25px;  
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .test-screen11 .header span {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Content */
+  .test-screen11 .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  
+  .test-screen11 .content h2 {
+    margin: 0;
+    margin-top: 20px;
+    color: #000;
+    font-size: 22px;
+  }
+  
+  .test-screen11 .content h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+  }
+  
+  .test-screen11 .display-script {
+    margin-top: 20px;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  /* Buttons */
+  .test-screen11 .click-button,
+  .test-screen11 .exit-button {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .test-screen11 .click-button {
+    background-color: #40a343;
+  }
+  
+  .test-screen11 .exit-button {
+    background-color: #2F4046;
+  }
+  
+  
+  /* Layout for Buttons */
+  .test-screen11 .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* Popup Styles */
+  .test-screen11 .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+   
+    border-radius: 10px;
+   
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .test-screen11 .popup .popup-header {
+    margin-bottom: 10px;
+  }
+  
+  .test-screen11 .popup .popup-body {
+    margin-bottom: 20px;
+  }
+  
+  .test-screen11 .popup .popup-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .test-screen11 .popup .popup-footer button {
+    background-color: #417bb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .test-screen11 .question-button{
+    background-color: #417bb2;
+  }
+
+  /* Responsive Adjustments */
+  @media screen and (max-width: 600px) {
+    .test-screen11 {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 10px;
+    }
+  
+    .test-screen11 .header span {
+        font-size: 18px;
+    }
+  
+    .test-screen11 .content h2 {
+        font-size: 18px;
+    }
+  
+    .test-screen11 .content h4 {
+        font-size: 14px;
+    }
+  
+    .test-screen11 .button-row-index {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .test-screen11 .click-button,
+    .test-screen11 .exit-button {
+        width: calc(50% - 10px);
+    }
+  
+    .test-screen11 .popup {
+        width: 90%;
+        max-width: 300px;
+    }
+  
+    .test-screen11 .popup .popup-footer button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+  }
+  
